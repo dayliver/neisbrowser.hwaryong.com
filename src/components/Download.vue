@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
+</script>
 <template>
   <section class="py-24 bg-brand text-white text-center px-6 clip-path-slant">
     <h2 class="text-4xl font-bold mb-6">업무 스트레스, 이제 그만.</h2>
@@ -7,12 +9,12 @@
       매일 30분 이상의 업무 시간을 절약하고 계십니다.
     </p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button class="bg-white text-brand px-10 py-4 rounded text-lg font-bold hover:bg-gray-100 transition shadow-lg">
+        <a :href="RELEASE_URL" target="_blank" class="bg-white text-brand px-10 py-4 rounded text-lg font-bold hover:bg-gray-100 transition shadow-lg">
         무료로 시작하기
-        </button>
-        <button class="bg-transparent border border-white text-white px-10 py-4 rounded text-lg font-bold hover:bg-white/10 transition">
+        </a>
+        <a href="https://dayliver.hwaryong.com/support" target="_blank" class="bg-transparent border border-white text-white px-10 py-4 rounded text-lg font-bold hover:bg-white/10 transition">
         개발자에게 커피 사주기
-        </button>
+        </a>
     </div>
   </section>
 </template>

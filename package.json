@@ -1,6 +1,6 @@
 {
   "name": "neisbrowser.hwaryong.com",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": true,
   "type": "module",
   "engines": {
@@ -13,6 +13,7 @@
     "push": "node scripts/push.js"
   },
   "dependencies": {
+    "@giscus/vue": "^3.1.1",
     "@tailwindcss/vite": "^4.1.17",
     "pinia": "^3.0.4",
     "vue": "^3.5.25",
