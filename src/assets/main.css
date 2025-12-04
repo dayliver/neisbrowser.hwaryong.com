@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  /* 나이스브라우저 브랜드 컬러 정의 */
+  --color-brand: #3d8ada;
+  --color-brand-dark: #2b6cb0;
+  --color-slack-bg: #f4ede4;
+
+  /* 폰트 설정 */
+  --font-sans: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
