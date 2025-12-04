@@ -1,6 +1,6 @@
 {
   "name": "neisbrowser.hwaryong.com",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "private": true,
   "type": "module",
   "engines": {
@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push": "node scripts/push.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
