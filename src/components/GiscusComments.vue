@@ -18,7 +18,7 @@ onMounted(() => {
   script.setAttribute('data-reactions-enabled', '1');
   script.setAttribute('data-emit-metadata', '0');
   script.setAttribute('data-input-position', 'top'); // 댓글 입력창을 상단에 배치
-  script.setAttribute('data-theme', 'preferred_color_scheme'); // 다크/라이트 모드 자동 전환
+  script.setAttribute('data-theme', 'light'); // <-- 이 부분을 'light'로 고정
   script.setAttribute('data-lang', 'ko');
   script.setAttribute('data-loading', 'lazy');
   script.setAttribute('crossorigin', 'anonymous');
