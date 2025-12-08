@@ -10,11 +10,11 @@ const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
     </p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a :href="RELEASE_URL" target="_blank" class="bg-white text-brand px-10 py-4 rounded text-lg font-bold hover:bg-gray-100 transition shadow-lg">
-        무료로 시작하기
+        내려받기
         </a>
-        <a href="https://dayliver.hwaryong.com/support" target="_blank" class="bg-transparent border border-white text-white px-10 py-4 rounded text-lg font-bold hover:bg-white/10 transition">
+        <!-- <a href="https://dayliver.hwaryong.com/support" target="_blank" class="bg-transparent border border-white text-white px-10 py-4 rounded text-lg font-bold hover:bg-white/10 transition">
         개발자에게 커피 사주기
-        </a>
+        </a> -->
     </div>
   </section>
 </template>

@@ -2,8 +2,8 @@
 import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import Features from './components/Features.vue';
-import Download from './components/Download.vue';
-import GiscusComments from './components/GiscusComments.vue'; // <-- Giscus 컴포넌트
+import Developers from './components/Developers.vue'; // <-- 이 줄 추가
+import GiscusComments from './components/GiscusComments.vue'; 
 import Footer from './components/Footer.vue';
 </script>
 
@@ -13,8 +13,7 @@ import Footer from './components/Footer.vue';
     <main>
       <Hero />
       <Features />
-      <Download />
-      <!-- 댓글 영역이 메인 콘텐츠의 마지막에 확실하게 위치하도록 합니다 -->
+      <Developers /> <!-- <-- 이 줄 추가 -->
       <GiscusComments /> 
     </main>
     <Footer />
