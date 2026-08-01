@@ -53,7 +53,7 @@ const RESULTS = [
     <!-- 강조: 같은 이름도 소속 탭으로 구분된다 -->
     <g transform="translate(40,356)">
       <rect x="0" y="0" width="640" height="76" rx="12" fill="#eff6ff" stroke="#bfdbfe" />
-      <circle cx="30" cy="27" r="3.5" fill="#3d8ada" />
+      <circle cx="30" cy="27" r="3.5" fill="#4f93da" />
       <text x="46" y="31" font-size="12" font-weight="600" fill="#1e40af">
         학급담임과 교과담임에 같은 메뉴가 있어도 경로로 구분됩니다
       </text>

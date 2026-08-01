@@ -9,7 +9,7 @@ const DEVELOPERS = [
   <section class="border-t border-line bg-surface py-24">
     <div class="mx-auto max-w-6xl px-6">
       <div class="reveal mx-auto max-w-2xl text-center">
-        <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand">Makers</p>
+        <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand-dark">Makers</p>
         <h2 class="mt-4 text-[clamp(1.8rem,3.6vw,2.4rem)] leading-[1.25] tracking-tight">
           <span class="block font-extralight text-ink-2">쓰는 사람이</span>
           <span class="block font-bold text-ink">직접 만들었습니다</span>
@@ -32,7 +32,7 @@ const DEVELOPERS = [
           />
           <div class="min-w-0">
             <h3 class="text-[15px] font-semibold text-ink">{{ dev.name }}</h3>
-            <p class="mt-0.5 text-[12.5px] font-medium text-brand">{{ dev.role }}</p>
+            <p class="mt-0.5 text-[12.5px] font-medium text-brand-dark">{{ dev.role }}</p>
             <p class="mt-0.5 truncate text-[12px] font-light text-muted">{{ dev.school }}</p>
           </div>
         </div>

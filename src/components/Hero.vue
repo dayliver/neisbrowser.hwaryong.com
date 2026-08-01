@@ -35,7 +35,7 @@ const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
         <!-- 굵기 대비로 만드는 타이포그래피 -->
         <h1 class="reveal mt-8 text-[clamp(2.6rem,7vw,4.6rem)] leading-[1.12] tracking-tight">
           <span class="block font-extralight text-ink-2">나이스 업무를</span>
-          <span class="block font-black text-ink">가볍고 빠르게</span>
+          <span class="block font-bold text-brand">가볍고 빠르게</span>
         </h1>
 
         <p class="reveal mx-auto mt-7 max-w-xl text-[15px] font-light leading-[1.85] text-muted">

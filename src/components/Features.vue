@@ -31,7 +31,7 @@ const HIGHLIGHTS = [
     <div class="mx-auto max-w-6xl px-6">
       <!-- 섹션 헤더 -->
       <div class="reveal mx-auto max-w-2xl text-center">
-        <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand">Features</p>
+        <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand-dark">Features</p>
         <h2 class="mt-4 text-[clamp(1.9rem,4vw,2.7rem)] leading-[1.25] tracking-tight">
           <span class="block font-extralight text-ink-2">매일 하던 일을</span>
           <span class="block font-bold text-ink">더 적은 손동작으로</span>
@@ -63,7 +63,7 @@ const HIGHLIGHTS = [
         </div>
 
         <div class="reveal order-1 lg:order-2">
-          <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand">Search</p>
+          <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand-dark">Search</p>
           <h3 class="mt-3 text-[clamp(1.6rem,3vw,2.1rem)] leading-snug tracking-tight">
             <span class="font-extralight text-ink-2">메뉴를 찾지 말고</span><br />
             <span class="font-bold text-ink">이름을 부르세요</span>
@@ -88,7 +88,7 @@ const HIGHLIGHTS = [
       <!-- 상세 2: 일괄 붙여넣기 -->
       <div class="mt-28 grid items-center gap-14 lg:grid-cols-2">
         <div class="reveal">
-          <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand">Paste</p>
+          <p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-brand-dark">Paste</p>
           <h3 class="mt-3 text-[clamp(1.6rem,3vw,2.1rem)] leading-snug tracking-tight">
             <span class="font-extralight text-ink-2">한 명씩 말고</span><br />
             <span class="font-bold text-ink">한 번에 전부</span>

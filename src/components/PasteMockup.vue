@@ -22,7 +22,7 @@ const ROWS = [
       <text x="46" y="33" font-size="10.5" font-weight="600" fill="#71717a">행동특성 및 종합의견</text>
 
       <!-- 선택된 4행 -->
-      <rect x="6" y="48" width="280" height="134" rx="7" fill="#eff6ff" stroke="#3d8ada" stroke-width="1.4" />
+      <rect x="6" y="48" width="280" height="134" rx="7" fill="#eff6ff" stroke="#4f93da" stroke-width="1.4" />
       <g v-for="(r, i) in ROWS" :key="r.no" :transform="`translate(0, ${i * 32})`">
         <text x="18" y="70" font-size="10" font-weight="500" fill="#a1a1aa">{{ r.no }}</text>
         <text x="40" y="70" font-size="10.5" font-weight="300" fill="#3f3f46">{{ r.text }}</text>

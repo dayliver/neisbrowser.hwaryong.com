@@ -57,8 +57,9 @@
 }
 
 @theme {
-  /* 브랜드 — 앱 아이콘의 파랑 */
-  --color-brand: #3d8ada;
+  /* 브랜드 — 앱 아이콘에서 추출한 하늘색 */
+  --color-brand: #4f93da;
+  /* 작은 글씨용: 흰 배경에서 대비를 확보하기 위한 진한 변형 */
   --color-brand-dark: #2b6cb0;
   --color-brand-soft: #eff6ff;
 
