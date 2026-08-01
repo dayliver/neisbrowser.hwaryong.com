@@ -16,9 +16,11 @@ const RESULTS = [
         <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#09090b" flood-opacity="0.16" />
       </filter>
 
-      <!-- 한 글자씩 입력되는 효과 -->
+      <!-- 한 글자씩 입력되는 효과.
+           좌표는 clip-path를 적용한 요소가 속한 그룹의 지역 좌표 기준
+           (검색줄 그룹 translate(40,40) 안쪽). -->
       <clipPath id="typeSearch">
-        <rect x="90" y="58" width="0" height="26">
+        <rect x="50" y="18" width="0" height="26">
           <animate attributeName="width" calcMode="discrete" dur="6s" repeatCount="indefinite"
                    keyTimes="0;0.06;0.11;0.16;0.21;1" values="0;19;34;50;68;68" />
         </rect>

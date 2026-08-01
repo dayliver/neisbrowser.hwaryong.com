@@ -25,9 +25,11 @@ const RESULTS = [
         <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#09090b" flood-opacity="0.22" />
       </filter>
 
-      <!-- 한 글자씩 입력되는 효과: 글자를 가리는 사각형의 폭을 단계적으로 넓힌다 -->
+      <!-- 한 글자씩 입력되는 효과: 글자를 가리는 사각형의 폭을 단계적으로 넓힌다.
+           좌표는 clip-path를 적용한 요소가 속한 그룹의 지역 좌표 기준이다
+           (여기서는 검색줄 그룹 translate(190,120) 안쪽 기준). -->
       <clipPath id="typeHero">
-        <rect x="236" y="138" width="0" height="26">
+        <rect x="46" y="18" width="0" height="26">
           <animate attributeName="width" calcMode="discrete" dur="6s" repeatCount="indefinite"
                    keyTimes="0;0.06;0.11;0.16;0.21;1" values="0;19;36;53;72;72" />
         </rect>
