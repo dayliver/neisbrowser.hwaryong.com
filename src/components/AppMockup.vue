@@ -24,6 +24,14 @@ const RESULTS = [
       <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="160%">
         <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#09090b" flood-opacity="0.22" />
       </filter>
+
+      <!-- 한 글자씩 입력되는 효과: 글자를 가리는 사각형의 폭을 단계적으로 넓힌다 -->
+      <clipPath id="typeHero">
+        <rect x="236" y="138" width="0" height="26">
+          <animate attributeName="width" calcMode="discrete" dur="6s" repeatCount="indefinite"
+                   keyTimes="0;0.06;0.11;0.16;0.21;1" values="0;19;36;53;72;72" />
+        </rect>
+      </clipPath>
     </defs>
 
     <g clip-path="url(#win)">
@@ -33,14 +41,16 @@ const RESULTS = [
       <rect width="1000" height="46" fill="#f4f4f5" />
       <line x1="0" y1="46" x2="1000" y2="46" stroke="#e4e4e7" stroke-width="1" />
 
-      <!-- 활성 탭 -->
-      <rect x="10" y="8" width="150" height="31" rx="9" fill="#ffffff" stroke="#d4d4d8" />
-      <text x="24" y="28" font-size="13" font-weight="600" fill="#09090b">업무포털</text>
-      <path d="M143 19l8 8M151 19l-8 8" stroke="#a1a1aa" stroke-width="1.6" stroke-linecap="round" />
+      <!-- 비활성 탭 -->
+      <text x="24" y="28" font-size="13" font-weight="400" fill="#8b8b93">업무포털</text>
+
+      <!-- 활성 탭 (메뉴 검색은 나이스 화면에서 쓰는 기능) -->
+      <rect x="94" y="8" width="130" height="31" rx="9" fill="#ffffff" stroke="#d4d4d8" />
+      <text x="110" y="28" font-size="13" font-weight="600" fill="#09090b">나이스</text>
+      <path d="M201 19l8 8M209 19l-8 8" stroke="#a1a1aa" stroke-width="1.6" stroke-linecap="round" />
 
       <!-- 비활성 탭 -->
-      <text x="182" y="28" font-size="13" font-weight="400" fill="#8b8b93">나이스</text>
-      <text x="262" y="28" font-size="13" font-weight="400" fill="#8b8b93">K-에듀파인</text>
+      <text x="244" y="28" font-size="13" font-weight="400" fill="#8b8b93">K-에듀파인</text>
 
       <!-- 새 탭 -->
       <path d="M366 23h13M372.5 16.5v13" stroke="#8b8b93" stroke-width="1.7" stroke-linecap="round" />
@@ -104,17 +114,33 @@ const RESULTS = [
       <g transform="translate(190,120)">
         <circle cx="30" cy="30" r="7" fill="none" stroke="#a1a1aa" stroke-width="2" />
         <path d="M35 35l5 5" stroke="#a1a1aa" stroke-width="2" stroke-linecap="round" />
-        <text x="52" y="35" font-size="15" font-weight="400" fill="#18181b">수행평가</text>
-        <rect x="122" y="21" width="1.6" height="18" fill="#18181b">
-          <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite" />
-        </rect>
-        <rect x="548" y="20" width="42" height="20" rx="10" fill="#f4f4f5" />
-        <text x="569" y="34" font-size="11" font-weight="500" fill="#a1a1aa" text-anchor="middle">3</text>
+        <text x="52" y="35" font-size="15" font-weight="400" fill="#18181b" clip-path="url(#typeHero)">수행평가</text>
+
+        <!-- 커서: 입력된 글자 수만큼 오른쪽으로 이동 -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+                            dur="6s" repeatCount="indefinite"
+                            keyTimes="0;0.06;0.11;0.16;0.21;1"
+                            values="0,0;17,0;34,0;51,0;68,0;68,0" />
+          <rect x="52" y="21" width="1.6" height="18" fill="#18181b">
+            <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite" />
+          </rect>
+        </g>
+
+        <!-- 결과 개수는 입력이 끝난 뒤 나타남 -->
+        <g>
+          <animate attributeName="opacity" calcMode="discrete" dur="6s" repeatCount="indefinite"
+                   keyTimes="0;0.23;1" values="0;1;1" />
+          <rect x="548" y="20" width="42" height="20" rx="10" fill="#f4f4f5" />
+          <text x="569" y="34" font-size="11" font-weight="500" fill="#a1a1aa" text-anchor="middle">3</text>
+        </g>
         <line x1="0" y1="56" x2="620" y2="56" stroke="#f4f4f5" />
       </g>
 
-      <!-- 결과 목록 -->
+      <!-- 결과 목록 (입력이 끝난 뒤 나타남) -->
       <g transform="translate(198,184)">
+        <animate attributeName="opacity" calcMode="discrete" dur="6s" repeatCount="indefinite"
+                 keyTimes="0;0.23;1" values="0;1;1" />
         <g v-for="(r, i) in RESULTS" :key="r.name" :transform="`translate(0, ${i * 62})`">
           <rect v-if="r.sel" x="0" y="0" width="604" height="56" rx="10" fill="#f4f4f5" />
           <text x="14" y="24" font-size="14" font-weight="500" fill="#27272a">{{ r.name }}</text>
