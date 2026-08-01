@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 
-const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
+const RELEASE_URL = 'https://github.com/dayliver/neisbrowser-release/releases';
 const isScrolled = ref(false);
 
 const handleScroll = () => {

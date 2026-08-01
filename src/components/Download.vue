@@ -1,5 +1,5 @@
 <script setup>
-const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
+const RELEASE_URL = 'https://github.com/dayliver/neisbrowser-release/releases';
 </script>
 <template>
   <section class="py-24 bg-brand text-white text-center px-6 clip-path-slant">

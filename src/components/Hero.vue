@@ -1,7 +1,7 @@
 <script setup>
 import AppMockup from './AppMockup.vue';
 
-const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
+const RELEASE_URL = 'https://github.com/dayliver/neisbrowser-release/releases';
 </script>
 
 <template>

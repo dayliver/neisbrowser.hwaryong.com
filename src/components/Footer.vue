@@ -1,5 +1,5 @@
 <script setup>
-const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
+const RELEASE_URL = 'https://github.com/dayliver/neisbrowser-release/releases';
 const year = new Date().getFullYear();
 </script>
 
