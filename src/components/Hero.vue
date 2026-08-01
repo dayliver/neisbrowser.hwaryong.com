@@ -1,41 +1,82 @@
 <script setup>
 const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
 </script>
+
 <template>
-  <section class="pt-32 pb-20 bg-[#f6f5f5] overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-      
-      <!-- 왼쪽: 텍스트 -->
-      <div class="text-left z-10">
-        <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.15] mb-6">
-          NEIS 업무,<br />
-          <span class="text-brand">더 빠르고 똑똑하게.</span>
+  <section class="relative overflow-hidden pt-36 pb-24">
+    <!-- 배경: 아주 옅은 그리드와 브랜드 글로우 -->
+    <div
+      class="pointer-events-none absolute inset-0 -z-10 opacity-[0.35]"
+      style="
+        background-image:
+          linear-gradient(to right, #e4e4e7 1px, transparent 1px),
+          linear-gradient(to bottom, #e4e4e7 1px, transparent 1px);
+        background-size: 56px 56px;
+        mask-image: radial-gradient(ellipse 70% 55% at 50% 0%, #000 40%, transparent 100%);
+        -webkit-mask-image: radial-gradient(ellipse 70% 55% at 50% 0%, #000 40%, transparent 100%);
+      "
+    ></div>
+    <div
+      class="pointer-events-none absolute left-1/2 top-[-8rem] -z-10 h-80 w-[42rem] -translate-x-1/2 rounded-full bg-brand/10 blur-[100px]"
+    ></div>
+
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="mx-auto max-w-3xl text-center">
+        <a
+          href="#features"
+          class="reveal inline-flex items-center gap-2 rounded-full border border-line bg-white px-3.5 py-1.5 text-[12px] font-medium text-muted transition hover:border-faint hover:text-ink-2"
+        >
+          <span class="h-1.5 w-1.5 rounded-full bg-brand"></span>
+          교사를 위한 나이스 전용 브라우저
+        </a>
+
+        <!-- 굵기 대비로 만드는 타이포그래피 -->
+        <h1 class="reveal mt-8 text-[clamp(2.6rem,7vw,4.6rem)] leading-[1.12] tracking-tight">
+          <span class="block font-extralight text-ink-2">나이스 업무를</span>
+          <span class="block font-black text-ink">가볍고 빠르게</span>
         </h1>
-        <p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-lg">
-          나이스브라우저는 선생님들의 반복적인 업무를 줄여드리는 전용 도구입니다. 
-          메뉴 검색부터 엑셀 일괄 붙여넣기까지, 지금 바로 경험해보세요.
+
+        <p class="reveal mx-auto mt-7 max-w-xl text-[15px] font-light leading-[1.85] text-muted">
+          깊숙이 숨은 메뉴는 <strong class="font-semibold text-ink-2">F3 한 번</strong>으로 열고,
+          엑셀의 여러 행은 <strong class="font-semibold text-ink-2">붙여넣기 한 번</strong>으로 채웁니다.
+          매일 반복하던 클릭을 줄이려고 현직 교사가 만들었습니다.
         </p>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <a :href="RELEASE_URL" target="_blank" class="bg-brand text-white px-8 py-4 rounded text-base font-bold hover:bg-brand-dark transition shadow-lg text-center">
-            WINDOWS용 다운로드
+
+        <div class="reveal mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            :href="RELEASE_URL"
+            target="_blank"
+            rel="noopener"
+            class="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-ink px-7 text-[14px] font-semibold text-white shadow-sm transition hover:bg-ink-2 sm:w-auto"
+          >
+            Windows용 다운로드
+            <svg
+              class="h-4 w-4 transition-transform group-hover:translate-y-0.5"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            >
+              <path d="M12 4v12m0 0 5-5m-5 5-5-5M4 20h16" />
+            </svg>
           </a>
-          <a href="#comments-section" class="bg-white text-brand border border-brand px-8 py-4 rounded text-base font-bold hover:bg-blue-50 transition shadow-sm text-center">
-            사용 가이드 보기 (피드백)
+          <a
+            href="#features"
+            class="inline-flex h-12 w-full items-center justify-center rounded-xl border border-line bg-white px-7 text-[14px] font-medium text-ink-2 transition hover:bg-surface sm:w-auto"
+          >
+            어떤 기능인가요
           </a>
         </div>
-        <p class="mt-4 text-sm text-gray-500">✅ 별도 가입 없음 · 평생 무료 업데이트</p>
+
+        <p class="reveal mt-5 text-[12px] font-light text-faint">
+          설치만 하면 끝 · 가입 없음 · 무료
+        </p>
       </div>
 
-      <!-- 오른쪽: 이미지 (목업) -->
-      <div class="relative z-10">
-        <!-- 실제 브라우저 화면 -->
-        <div class="rounded-xl shadow-2xl border border-gray-200 overflow-hidden transform rotate-1 hover:rotate-0 transition duration-500 bg-white">
-            <img src="/images/hero4.png" alt="나이스브라우저 실행화면" class="w-full h-auto block" />
+      <!-- 앱 스크린샷 -->
+      <div class="reveal relative mx-auto mt-16 max-w-5xl">
+        <div class="overflow-hidden rounded-2xl border border-line bg-white shadow-[0_24px_70px_-20px_rgba(9,9,11,0.25)]">
+          <img src="/images/hero4.png" alt="나이스브라우저 실행 화면" class="block h-auto w-full" />
         </div>
-        <!-- 장식용 배경 원 -->
-        <div class="absolute -top-10 -right-10 w-64 h-64 bg-brand/10 rounded-full blur-3xl -z-10"></div>
+        <div class="pointer-events-none absolute inset-x-8 -bottom-6 -z-10 h-24 rounded-full bg-ink/10 blur-3xl"></div>
       </div>
-
     </div>
   </section>
 </template>
