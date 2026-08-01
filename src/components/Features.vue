@@ -1,4 +1,7 @@
 <script setup>
+import SearchMockup from './SearchMockup.vue';
+import PasteMockup from './PasteMockup.vue';
+
 const HIGHLIGHTS = [
   {
     title: '메뉴 검색',
@@ -55,10 +58,8 @@ const HIGHLIGHTS = [
 
       <!-- 상세 1: 메뉴 검색 -->
       <div class="mt-28 grid items-center gap-14 lg:grid-cols-2">
-        <div class="reveal order-2 overflow-hidden rounded-2xl border border-line bg-surface shadow-[0_20px_50px_-24px_rgba(9,9,11,0.3)] lg:order-1">
-          <video autoplay loop muted playsinline class="block h-full w-full object-cover">
-            <source src="/videos/demo-search.mp4" type="video/mp4" />
-          </video>
+        <div class="reveal order-2 overflow-hidden rounded-2xl border border-line bg-surface p-4 sm:p-6 lg:order-1">
+          <SearchMockup />
         </div>
 
         <div class="reveal order-1 lg:order-2">
@@ -108,10 +109,8 @@ const HIGHLIGHTS = [
           </ul>
         </div>
 
-        <div class="reveal overflow-hidden rounded-2xl border border-line bg-surface shadow-[0_20px_50px_-24px_rgba(9,9,11,0.3)]">
-          <video autoplay loop muted playsinline class="block h-full w-full object-cover">
-            <source src="/videos/demo-paste.mp4" type="video/mp4" />
-          </video>
+        <div class="reveal overflow-hidden rounded-2xl border border-line bg-surface p-4 sm:p-6">
+          <PasteMockup />
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
 <script setup>
+import AppMockup from './AppMockup.vue';
+
 const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
 </script>
 
@@ -72,8 +74,8 @@ const RELEASE_URL = 'https://github.com/dayliver/neis-browser-release/releases';
 
       <!-- 앱 스크린샷 -->
       <div class="reveal relative mx-auto mt-16 max-w-5xl">
-        <div class="overflow-hidden rounded-2xl border border-line bg-white shadow-[0_24px_70px_-20px_rgba(9,9,11,0.25)]">
-          <img src="/images/hero4.png" alt="나이스브라우저 실행 화면" class="block h-auto w-full" />
+        <div class="overflow-hidden rounded-2xl shadow-[0_24px_70px_-20px_rgba(9,9,11,0.25)]">
+          <AppMockup />
         </div>
         <div class="pointer-events-none absolute inset-x-8 -bottom-6 -z-10 h-24 rounded-full bg-ink/10 blur-3xl"></div>
       </div>
