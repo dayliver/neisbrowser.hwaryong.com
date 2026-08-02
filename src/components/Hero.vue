@@ -40,7 +40,8 @@ const RELEASE_URL = 'https://github.com/dayliver/neisbrowser-release/releases';
 
         <p class="reveal mx-auto mt-7 max-w-xl text-[15px] font-light leading-[1.85] text-muted">
           깊숙이 숨은 메뉴는 <strong class="font-semibold text-ink-2">F3 한 번</strong>으로 열고,
-          엑셀의 여러 행은 <strong class="font-semibold text-ink-2">붙여넣기 한 번</strong>으로 채웁니다.
+          엑셀의 여러 행은 <strong class="font-semibold text-ink-2">붙여넣기 한 번</strong>으로 채우고,
+          좁은 업무 화면은 <strong class="font-semibold text-ink-2">F11 한 번</strong>으로 넓힙니다.
           매일 반복하던 클릭을 줄이려고 현직 교사가 만들었습니다.
         </p>
 
