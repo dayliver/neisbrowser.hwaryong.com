@@ -34,6 +34,10 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll));
           class="hidden rounded-lg px-3 py-2 text-[13px] font-medium text-muted transition hover:bg-surface hover:text-ink sm:block"
         >기능</a>
         <a
+          href="#install"
+          class="hidden rounded-lg px-3 py-2 text-[13px] font-medium text-muted transition hover:bg-surface hover:text-ink sm:block"
+        >설치 안내</a>
+        <a
           href="#comments-section"
           class="hidden rounded-lg px-3 py-2 text-[13px] font-medium text-muted transition hover:bg-surface hover:text-ink sm:block"
         >피드백</a>

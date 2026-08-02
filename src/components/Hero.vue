@@ -68,7 +68,8 @@ const RELEASE_URL = 'https://github.com/dayliver/neisbrowser-release/releases';
         </div>
 
         <p class="reveal mt-5 text-[12px] font-light text-faint">
-          설치만 하면 끝 · 가입 없음 · 무료
+          가입 없음 · 무료 · 관리자 권한 불필요 ·
+          <a href="#install" class="underline decoration-line underline-offset-4 transition hover:text-muted">설치 안내</a>
         </p>
       </div>
 

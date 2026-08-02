@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import Features from './components/Features.vue';
+import InstallGuide from './components/InstallGuide.vue';
 import Developers from './components/Developers.vue';
 import GiscusComments from './components/GiscusComments.vue';
 import Footer from './components/Footer.vue';
@@ -16,6 +17,7 @@ useReveal();
     <main>
       <Hero />
       <Features />
+      <InstallGuide />
       <Developers />
       <GiscusComments />
     </main>
