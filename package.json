@@ -11,6 +11,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "push": "node scripts/push.js",
+    "latest": "node scripts/make-latest.js",
     "deploy": "npm run build && wrangler pages deploy dist --project-name=neisbrowser-hwaryong-com --branch=main"
   },
   "dependencies": {
