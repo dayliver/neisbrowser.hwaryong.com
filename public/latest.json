@@ -1,11 +1,11 @@
 {
-  "version": "1.0.0-alpha.6",
-  "notes": "나이스브라우저 1.0.0-alpha.6 — 자세한 내용은 릴리스 노트를 확인하세요.",
-  "pub_date": "2026-08-19T00:58:54.328Z",
+  "version": "1.0.0-alpha.7",
+  "notes": "나이스브라우저 1.0.0-alpha.7 — 자세한 내용은 릴리스 노트를 확인하세요.",
+  "pub_date": "2026-08-19T02:01:28.404Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUWUxKWWFMZUVXUDN2Rnd1d2VISERrdDVUaWgvdTlIM3g4cVdSc0dWbUxXNXE1dkNhbWswMFF1THcxclZxTm81Ulh5M1Z3bzRkYnZTQkVKc3QwYTBTYTJ2dm5KQWEzN2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MDk2NTQzCWZpbGU6TmVpc0Jyb3dzZXJfMS4wLjAtYWxwaGEuNl94NjQtc2V0dXAuZXhlCmlmSlZjVFR3YkNqa0FDbFAyVTBDakgySk5iM1h5QWRXby84T0FMOEdJSGx5RGN2KzRnaWVsVnlIQlR0bzJ1MjZZais4d3RKNXptN2dJSDdHMzJmZURBPT0K",
-      "url": "https://github.com/dayliver/neisbrowser-release/releases/download/v1.0.0-alpha.6/NeisBrowser_1.0.0-alpha.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUWUxKWWFMZUVXUDlaRjhCbUMyZWdHZ2NJaTNPMWU2QVROeTVycjRtS3JJcUFTWUE1VEtzdlVabDBEZmRPVGd3QUJYZlVuR0tTaFd4bEZidDNLcXJzV3YwazE2bjF5MHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MTA0ODQ1CWZpbGU6TmVpc0Jyb3dzZXJfMS4wLjAtYWxwaGEuN194NjQtc2V0dXAuZXhlClY4bnZXUlVPazlvZk1lTDU0VmRpWGJLQmF3blhEeXQ0Q3V4aVhlYTJNYktydWk0aEhubmxVZVExR0ZvMU5ac0FhekU4Z0NqdXNoYW5XODU4S3pzZ0R3PT0K",
+      "url": "https://github.com/dayliver/neisbrowser-release/releases/download/v1.0.0-alpha.7/NeisBrowser_1.0.0-alpha.7_x64-setup.exe"
     }
   }
 }
